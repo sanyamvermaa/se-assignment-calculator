@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     environment {
-        // REPLACE THIS WITH YOUR FRIEND'S USERNAME
-        DOCKER_IMAGE = 'YOUR_DOCKERHUB_USERNAME/roll-number-even'
+        // Updated username
+        DOCKER_IMAGE = 'sanyamvermaa/roll-number-even'
         REGISTRY_CREDENTIALS_ID = 'dockerhub-creds'
         
-        // If on Mac, uncomment the line below. If on Windows, keep it commented.
-        // PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+        // Uncommented PATH so Jenkins can find Docker
+        PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
     }
 
     stages {
